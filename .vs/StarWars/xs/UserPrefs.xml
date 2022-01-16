@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{5C9A7D54-EEF4-48DB-BF0A-6215D60E892C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Characters/CharacterQueries.cs">
+    <Files>
+      <File FileName="Characters/CharacterQueries.cs" Line="53" Column="22" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="1" Column="1" />
+      <File FileName="Reviews/ReviewQueries.cs" Line="1" Column="1" />
+      <File FileName="Reviews/ReviewSubscriptions.cs" Line="1" Column="1" />
+      <File FileName="Reviews/ReviewMutations.cs" Line="1" Column="1" />
+      <File FileName="Reviews/Review.cs" Line="1" Column="1" />
+      <File FileName="Reviews/CreateReviewPayload.cs" Line="1" Column="1" />
+      <File FileName="Reviews/CreateReviewInput.cs" Line="1" Column="1" />
+      <File FileName="Repositories/CharacterRepository.cs" Line="3" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.StarWars PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

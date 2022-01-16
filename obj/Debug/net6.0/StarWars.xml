@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StarWars</name>
+    </assembly>
+    <members>
+        <member name="T:StarWars.Characters.CharacterQueries">
+            <summary>
+            The queries related to characters.
+            </summary>
+        </member>
+        <member name="M:StarWars.Characters.CharacterQueries.GetHero(StarWars.Characters.Episode,StarWars.Repositories.ICharacterRepository)">
+            <summary>
+            Retrieve a hero by a particular Star Wars episode.
+            </summary>
+            <param name="episode">The episode to retrieve the hero.</param>
+            <param name="repository">The character repository.</param>
+            <returns>The hero character.</returns>
+        </member>
+        <member name="M:StarWars.Characters.CharacterQueries.GetCharacters(StarWars.Repositories.ICharacterRepository)">
+            <summary>
+            Gets all character.
+            </summary>
+            <param name="repository">The character repository.</param>
+            <returns>The character.</returns>
+        </member>
+        <member name="M:StarWars.Characters.CharacterQueries.GetCharacter(System.Int32[],StarWars.Repositories.ICharacterRepository)">
+            <summary>
+            Gets a character by it`s id.
+            </summary>
+            <param name="ids">The ids of the human to retrieve.</param>
+            <param name="repository">The character repository.</param>
+            <returns>The character.</returns>
+        </member>
+        <member name="M:StarWars.Characters.CharacterQueries.Search(System.String,StarWars.Repositories.ICharacterRepository)">
+            <summary>
+            Search the repository for objects that contain the text.
+            </summary>
+            <param name="text">
+            The text we are searching for.
+            </param>
+            <param name="repository">The character repository.</param>
+            <returns>Returns the union type <see cref="T:StarWars.Characters.ISearchResult"/>.</returns>
+        </member>
+        <member name="T:StarWars.Characters.CharacterResolvers">
+            <summary>
+            This resolver class extends all object types implementing <see cref="T:StarWars.Characters.ICharacter"/>.
+            </summary>
+        </member>
+        <member name="T:StarWars.Characters.Droid">
+            <summary>
+            A droid in the Star Wars universe.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.Droid.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:StarWars.Characters.Droid.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:StarWars.Characters.Droid.Friends">
+            <inheritdoc />
+        </member>
+        <member name="P:StarWars.Characters.Droid.AppearsIn">
+            <inheritdoc />
+        </member>
+        <member name="P:StarWars.Characters.Droid.PrimaryFunction">
+            <summary>
+            The droid's primary function.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.Droid.Height">
+            <inheritdoc />
+        </member>
+        <member name="T:StarWars.Characters.Episode">
+            <summary>
+            The Star Wars episodes.
+            </summary>
+        </member>
+        <member name="F:StarWars.Characters.Episode.NewHope">
+            <summary>
+            Star Wars Episode IV: A New Hope
+            </summary>
+        </member>
+        <member name="F:StarWars.Characters.Episode.Empire">
+            <summary>
+            Star Wars Episode V: Empire Strikes Back
+            </summary>
+        </member>
+        <member name="F:StarWars.Characters.Episode.Jedi">
+            <summary>
+            Star Wars Episode VI: Return of the Jedi
+            </summary>
+        </member>
+        <member name="T:StarWars.Characters.Human">
+            <summary>
+            A human character in the Star Wars universe.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.Human.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:StarWars.Characters.Human.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:StarWars.Characters.Human.Friends">
+            <inheritdoc />
+        </member>
+        <member name="P:StarWars.Characters.Human.AppearsIn">
+            <inheritdoc />
+        </member>
+        <member name="P:StarWars.Characters.Human.HomePlanet">
+            <summary>
+            The planet the character is originally from.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.Human.Height">
+            <inheritdoc />
+        </member>
+        <member name="T:StarWars.Characters.ICharacter">
+            <summary>
+            A character in the Star Wars universe.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.ICharacter.Id">
+            <summary>
+            The unique identifier for the character.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.ICharacter.Name">
+            <summary>
+            The name of the character.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.ICharacter.Friends">
+            <summary>
+            The ids of the character's friends.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.ICharacter.AppearsIn">
+            <summary>
+            The episodes the character appears in.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.ICharacter.Height">
+            <summary>
+            The height of the character.
+            </summary>
+        </member>
+        <member name="T:StarWars.Characters.Starship">
+            <summary>
+            A starship in the Star Wars universe.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.Starship.Id">
+            <summary>
+            The Id of the starship.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.Starship.Name">
+            <summary>
+            The name of the starship.
+            </summary>
+        </member>
+        <member name="P:StarWars.Characters.Starship.Length">
+            <summary>
+            The length of the starship.
+            </summary>
+        </member>
+        <member name="T:StarWars.Characters.Unit">
+            <summary>
+            Different units of measurement.
+            </summary>
+        </member>
+        <member name="T:StarWars.Reviews.CreateReviewInput">
+            <summary>
+            This input represents the data needed to create a review.
+            </summary>
+        </member>
+        <member name="M:StarWars.Reviews.CreateReviewInput.#ctor(StarWars.Characters.Episode,System.Int32,System.String)">
+            <summary>
+            Creates a new instance of <see cref="T:StarWars.Reviews.CreateReviewInput"/>.
+            </summary>
+            <param name="episode">
+            The review for which to create the review.
+            </param>
+            <param name="stars">
+            The number of stars given for this review.
+            </param>
+            <param name="commentary">
+            An explanation for the rating.
+            </param>
+        </member>
+        <member name="P:StarWars.Reviews.CreateReviewInput.Episode">
+            <summary>
+            The review for which to create the review.
+            </summary>
+        </member>
+        <member name="P:StarWars.Reviews.CreateReviewInput.Stars">
+            <summary>
+            The number of stars given for this review.
+            </summary>
+        </member>
+        <member name="P:StarWars.Reviews.CreateReviewInput.Commentary">
+            <summary>
+            An explanation for the rating.
+            </summary>
+        </member>
+        <member name="T:StarWars.Reviews.CreateReviewPayload">
+            <summary>
+            This payload allows us to query the created review object.
+            </summary>
+        </member>
+        <member name="M:StarWars.Reviews.CreateReviewPayload.#ctor(StarWars.Characters.Episode,StarWars.Reviews.Review)">
+            <summary>
+            Creates a new instance of <see cref="T:StarWars.Reviews.CreateReviewPayload"/>.
+            </summary>
+            <param name="episode">
+            The episode for which a review was created.
+            </param>
+            <param name="review">
+            The review that was being created.
+            </param>
+        </member>
+        <member name="P:StarWars.Reviews.CreateReviewPayload.Episode">
+            <summary>
+            The episode for which a review was created.
+            </summary>
+        </member>
+        <member name="P:StarWars.Reviews.CreateReviewPayload.Review">
+            <summary>
+            The review that was being created.
+            </summary>
+        </member>
+        <member name="T:StarWars.Reviews.Review">
+            <summary>
+            A review of a particular movie.
+            </summary>
+        </member>
+        <member name="M:StarWars.Reviews.Review.#ctor(System.Int32,System.String)">
+            <summary>
+            Creates a new instance of <see cref="T:StarWars.Reviews.Review"/>.
+            </summary>
+            <param name="stars">
+            The number of stars given for this review.
+            </param>
+            <param name="commentary">
+            The explanation for the rating.
+            </param>
+        </member>
+        <member name="P:StarWars.Reviews.Review.Id">
+            <summary>
+            The ID of the review.
+            </summary>
+        </member>
+        <member name="P:StarWars.Reviews.Review.Stars">
+            <summary>
+            The number of stars given for this review.
+            </summary>
+        </member>
+        <member name="P:StarWars.Reviews.Review.Commentary">
+            <summary>
+            An explanation for the rating.
+            </summary>
+        </member>
+        <member name="T:StarWars.Reviews.ReviewMutations">
+            <summary>
+            The mutations related to reviews.
+            </summary>
+        </member>
+        <member name="M:StarWars.Reviews.ReviewMutations.CreateReview(StarWars.Reviews.CreateReviewInput,StarWars.Repositories.IReviewRepository,HotChocolate.Subscriptions.ITopicEventSender)">
+            <summary>
+            Creates a review for a given Star Wars episode.
+            </summary>
+        </member>
+        <member name="T:StarWars.Reviews.ReviewQueries">
+            <summary>
+            The queries related to reviews.
+            </summary>
+        </member>
+        <member name="T:StarWars.Reviews.ReviewSubscriptions">
+            <summary>
+            The subscriptions related to reviews.
+            </summary>
+        </member>
+        <member name="M:StarWars.Reviews.ReviewSubscriptions.OnReview(StarWars.Characters.Episode,StarWars.Reviews.Review)">
+            <summary>
+            The OnReview event is invoked whenever a new review is being created.
+            </summary>
+            <param name="episode">
+            The episode to which you want to subscribe to.
+            </param>
+            <param name="message">
+            The event message.
+            </param>
+            <returns>
+            The review that was created.
+            </returns>
+        </member>
+    </members>
+</doc>
